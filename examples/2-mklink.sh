@@ -76,10 +76,10 @@ $ ln -s $(ls -d /mnt/c/Users/*/*/Desktop)
 
 または
 
-$ ln -s $(ls -d /mnt/c/Users/*/*/デスクトップ) Desktop
+$ ln -s "$(ls -d /mnt/c/Users/*/*/デスクトップ | tail -1)" Desktop
 
 
-$ ls -l Desktop
+$ ls -l Desktop/
 
 # デスクトップの内容が表示されましたか？
 
