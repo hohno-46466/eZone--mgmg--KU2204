@@ -26,13 +26,21 @@ $ ls -d /mnt/c/Users/*/Desktop/mgws2204
 # (B) だった人
 
 # 改めて以下を実行してみてください。その結果 (A) のようなメッセージがでたら、以下の「(A)だった人」に準じてください
-# ただし、読み替えが必要(*)ですので「準じて」と言われてもわからない人は教員に相談してください
+# ただし、読み替えが必要(*1,*2)ですので「準じて」と言われてもわからない人は教員に相談してください
 
-# (*) 以下の  /mnt/c/Users/*/Desktop/mgws2204 を /mnt/c/Users/*/*/Desktop/mgws2204 に読み替える
+# (*1) 以下の  /mnt/c/Users/*/Desktop/mgws2204 を /mnt/c/Users/*/*/Desktop/mgws2204 に読み替える
 
-$cd
+$ cd
 
 $ ls -d /mnt/c/Users/*/*/Desktop/mgws2204
+
+# それでもだめだった人（OneDrive ユーザ等）
+
+# (*2) 以下の  /mnt/c/Users/*/Desktop/mgws2204 を /mnt/c/Users/*/*/*/mgws2204 に読み替える
+
+$ cd
+
+$ ls -d /mnt/c/Users/*/*/*/mgws2204
 
 # ------------------------------------------------
 
@@ -65,6 +73,4 @@ $ ln -s $(ls -d /mnt/c/Users/*/Desktop)
 $ ls -l Desktop
 
 # デスクトップの内容が表示されましたか？
-
-
 
