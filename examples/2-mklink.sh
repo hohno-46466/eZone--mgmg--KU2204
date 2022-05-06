@@ -70,6 +70,15 @@ $ pwd
 
 $ ln -s $(ls -d /mnt/c/Users/*/Desktop) 
 
+または
+
+$ ln -s $(ls -d /mnt/c/Users/*/*/Desktop) 
+
+または
+
+$ ln -s $(ls -d /mnt/c/Users/*/*/デスクトップ) 
+
+
 $ ls -l Desktop
 
 # デスクトップの内容が表示されましたか？
