@@ -76,7 +76,7 @@ $ ln -s $(ls -d /mnt/c/Users/*/*/Desktop)
 
 または
 
-$ ln -s $(ls -d /mnt/c/Users/*/*/デスクトップ) 
+$ ln -s $(ls -d /mnt/c/Users/*/*/デスクトップ) Desktop
 
 
 $ ls -l Desktop
