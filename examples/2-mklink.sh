@@ -52,13 +52,18 @@ $ cd
 
 $ pwd 		# ホームディレクトリに移動していますか？
 
-$ ln -s $(ls -d /mnt/c/Users/*/Desktop/mgws2204)
+$ ln -s $(ls -d /mnt/c/Users/*/Desktop/mgws2204) 
+または
+$ ln -s $(ls -d /mnt/c/Users/*/*/Desktop/mgws2204) 
+または
+$ ln -s "$(ls -d /mnt/c/Users/*/*/デスクトップ/mgws2204 | tail -1)"
+
 
 $ ls -l		# 以下のような行があれば OK です
 
 # lrwxrwxrwx 1 hohno hohno    35 May  6 08:36  mgws2204 -> /mnt/c/Users/hohno/Desktop/mgws2204
 
-$ ls -l mgws2204
+$ ls -l mgws2204/
 
 # ------------------------------------------------
 
@@ -69,13 +74,9 @@ $ cd
 $ pwd
 
 $ ln -s $(ls -d /mnt/c/Users/*/Desktop) 
-
 または
-
 $ ln -s $(ls -d /mnt/c/Users/*/*/Desktop) 
-
 または
-
 $ ln -s "$(ls -d /mnt/c/Users/*/*/デスクトップ | tail -1)" Desktop
 
 
