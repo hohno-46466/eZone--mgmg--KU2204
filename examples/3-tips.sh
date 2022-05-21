@@ -1,5 +1,5 @@
 #
-# ちょっとしたワンライナー
+# Part 1 - ちょっとしたワンライナー
 #
 
 # (1) 環境変数 PATH の内容をわかりやすく表示
@@ -26,31 +26,33 @@ $ grep "$HOME/bin" $HOME/.profile | grep "PATH="	# 同上
 $ grep '$HOME/bin' $HOME/.profile | grep "PATH="	# 同上
 
 #
-# PATH を追加する賢い方法（少し複雑かもしれないがやってみよう！）
+# Part 2 - PATH を追加する賢い方法（少し複雑かもしれないがやってみよう！）
 #
 
-# 作業場所に移動
+# Step.1 作業場所に移動
 
 $ cd
 $ cd Desktop/mgmg22Q1
 $ mkdir tmp
 $ cd tmp
 
-# ツールをダウンロード
+# Step.2 ツールをダウンロード
 
 $ wget https://github.com/hohno-46466/eZone--mgmg--KU2204/blob/main/scripts/addpath.sh
 
-# addpath.sh が作られていることを確認
+
+# Step.3 addpath.sh が作られていることを確認
 
 $ ls -l addpath.sh
 $ less addpath.sh
 
-# PATH $ HOME/bin を PATH に加えたい場合
+
+# Step.4-1 PATH $ HOME/bin を PATH に加えたい場合
 
 $ sh addpath.sh '$HOME/bin'
-ZZ
 
-# PATH $ HOME/kotoriotoko/BIN を PATH に加えたい場合
+# Step.4-1 PATH $ HOME/kotoriotoko/BIN を PATH に加えたい場合
 
 $ sh addpath.sh '$HOMEkotoriotoko/BIN'
 
+#
