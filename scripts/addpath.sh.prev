@@ -4,7 +4,7 @@
 #
 # ADDPATH.SH: Indicator of How to Add New Paths Into the Proper Run-Script
 #
-# Written by t-matsuura@usp-lab.com on 2022-05-25
+# Written by t-matsuura@usp-lab.com on 2022-05-10
 #
 ######################################################################
 
@@ -28,11 +28,10 @@
 
 paths=''
 for dir in "$@"; do
-  eval [ -d \""$dir"\" ] #"
-  case $? in [!0]*)
+  [ -d "$dir" ] || {
     echo "$dir: No such directory" 1>&2
     exit 1
-  ;; esac
+  }
   paths="${paths}:$dir"
 done
 paths=${paths#:}
@@ -54,21 +53,21 @@ case ${SHELL##*/} in
   bash)  type='Bourne shell'
          prompt='$'
          line_to_be_inserted="export PATH=\"${paths}:\$PATH\""
-         createstartts="echo '[ -f \"\$HOME/.bashrc\" ] && . \"\$HOME/.bashrc\" >'"
+         createstartts="echo '[ -f \"$HOME/.bashrc\" ] && . \"\$HOME/.bashrc\" >'"
          startrss="$startrss \$HOME/.bash_profile"
          startrss="$startrss \$HOME/.profile"
          ;;
   zsh)   type='Bourne shell'
          prompt='$'
          line_to_be_inserted="export PATH=\"${paths}:\$PATH\""
-         createstartts="echo '[ -f \"\$HOME/.zshrc\" ] && . \"\$HOME/.zshrc\" >'"
+         createstartts="echo '[ -f \"$HOME/.zshrc\" ] && . \"\$HOME/.zshrc\" >'"
          startrss="$startrss \$HOME/.zpath"
          startrss="$startrss \$HOME/.zshenv"
          startrss="$startrss \$HOME/.zprofile"
          ;;
   *sh)   type='Bourne shell'
          prompt='$'
-         createstartts="echo '[ -f \"\$HOME/.shrc\" ] && . \"\$HOME/.shrc\" >'"
+         createstartts="echo '[ -f \"$HOME/.shrc\" ] && . \"\$HOME/.shrc\" >'"
          line_to_be_inserted="export PATH=\"${paths}:\$PATH\""
          startrss="$startrss \$HOME/.profile"
          ;;
