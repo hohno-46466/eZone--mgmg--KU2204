@@ -47,4 +47,4 @@ Lecture on Monogramming at Kanazawa University starting from April 2022
      
      15 directories, 26 files (Thu Jul 14 03:58:42 JST 2022)
 
-
+-EOF-
