@@ -2,7 +2,7 @@
 
 Lecture on Monogramming at Kanazawa University starting from April 2022
 
-     ./eZone--mgmg--KU2204
+    ./eZone--mgmg--KU2204
      ├──  README.md
      ├──  README.md.old
      ├──  UsefulURLs.md
@@ -45,7 +45,7 @@ Lecture on Monogramming at Kanazawa University starting from April 2022
          ├──  addts.sh
          └──  addts.sh.old
      
-     15 directories, 26 files (Sun Sep 25 19:07:11 JST 2022)
+     15 directories, 26 files (Fri Sep 30 22:41:57 JST 2022)
 
 
 Note: URL = https://github.com/hohno-46466/eZone--mgmg--KU2204
