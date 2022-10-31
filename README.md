@@ -45,7 +45,7 @@ Lecture on Monogramming at Kanazawa University starting from April 2022
          ├──  addts.sh
          └──  addts.sh.old
      
-     15 directories, 26 files (Mon Oct 17 00:31:05 JST 2022)
+     15 directories, 26 files (Mon Oct 31 12:41:19 JST 2022)
 
 
 Note: URL = https://github.com/hohno-46466/eZone--mgmg--KU2204
